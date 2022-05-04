@@ -13,3 +13,7 @@ build:
             coverage:
               file: 'coverage/clover.xml'
               format: 'clover'
+tests:
+        before:
+            - command: yarn build
+              idle_timeout: 5000
